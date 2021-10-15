@@ -34,6 +34,8 @@ Then you'll want to run the following command.
 DepotDownloader.exe -app 413150 -depot 413151 -manifest PUTMANIFESTIDHERE -username PUTUSERNAMEHERE -password PUTPASSWORDHERE
 ```
 
+**NOTE: your username is what you login with, it's not necessarily what you show up as on your profile.**
+
 <img src="images/downpatch/run_command.png" max-height="400px"/>
 
 Filling in the value for the manifest from above, as well as your username/password. If you have setup MFA, it will ask you for your MFA token to complete authentication.
