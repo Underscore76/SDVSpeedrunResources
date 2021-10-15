@@ -2,4 +2,5 @@
 
 Some basic utility guides for getting started with SDV speedrunning.
 
-* [How to setup a load remover in LiveSplit](./loadremover.md)
+- [How to setup a load remover in LiveSplit](./loadremover.md)
+- [Downpatching to a specific version](./downpatching.md)
