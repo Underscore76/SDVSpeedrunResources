@@ -71,4 +71,4 @@ Here you can also override some in game settings for new file creation:
 
 ---
 
-And that's it, if you have questions please post as either an issue here on github or in the stardew discord ([https://discord.gg/2zsuVzjAhN](https://discord.gg/2zsuVzjAhN))
+And that's it, if you have questions please reach out on the Stardew Speedrun Discord ([https://discord.gg/2zsuVzjAhN](https://discord.gg/2zsuVzjAhN))
