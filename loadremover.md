@@ -55,7 +55,6 @@ To swap you can change it via the `Compare Against` menu:
 
 What are removed:
 
-- `Remove /pause time` - should remove time when starting game paused from mp
 - `Remove saving time` - should remove most large loading times, some may not be keyed fully as there is no direct trigger to identify.
 - `Remove rebuild graphics time` - relevant to WSC, should remove the OS-controlled time due to swapping from windowed to fullscreen.
 
