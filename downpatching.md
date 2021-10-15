@@ -34,6 +34,8 @@ Then you'll want to run the following command.
 DepotDownloader.exe -app 413150 -depot 413151 -manifest PUTMANIFESTIDHERE -username PUTUSERNAMEHERE -password PUTPASSWORDHERE
 ```
 
+<img src="images/downpatch/run_command.png" max-height="400px"/>
+
 Filling in the value for the manifest from above, as well as your username/password. If you have setup MFA, it will ask you for your MFA token to complete authentication.
 
 For reference, 413150 is the APP ID for Stardew Valley, and 413151 is the DEPOT ID for Windows (413152 is for MacOS, 413153 is for Linux).
