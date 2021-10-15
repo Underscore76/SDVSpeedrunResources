@@ -49,13 +49,14 @@ Which will look something like this (it will toggle the alternate timing method 
 To swap you can change it via the `Compare Against` menu:
 <img src="images/loadremover/compare_against.png" height="300px"/>
 
-## Adding the component to your layout
+<!-- unclear to me if I need to do this manual part -->
+<!-- ## Adding the component to your layout
 
 The load remover component lives under the `Control` menu.
 
 <img src="images/loadremover/add_autosplit.png" height="300px"/>
 
-You can adjust settings for the load remover by clicking the `Layout Settings` button.
+You can adjust settings for the load remover by clicking the `Layout Settings` button. -->
 
 # Description of Settings
 
