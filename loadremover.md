@@ -11,6 +11,8 @@ Current support is for the following versions:
 - 1.4.0
 - 1.4.5
 - 1.5.4
+- 1.5.5
+- 1.5.6 Hotfix #3
 
 # Installing and using the Load Remover
 
@@ -67,6 +69,14 @@ Here you can also override some in game settings for new file creation:
 - `Slingshot Mode` (available in 1.4+) - adjust how your slingshot works (`Pull in opposite direction` by default)
 - `Unbind Emote Button` (available in 1.4+) - unbind the `Y` key from opening the emote menu
 - `Unbind Chat Button` (available in 1.3+) - unbind the `T` key from opening the chat menu (`/` still works)
+
+# Troubleshooting
+
+## Update doesn't actually update (Loops)
+
+Prior versions of the load remover (pre-v1.2.5) had an issue where the updated DLL was getting put in the wrong location in LiveSplit so that it wouldn't overwrite the old DLL (thus retriggering the update sequence...).
+
+If you have a `LiveSplit.StardewValley.dll` in both your base `LiveSplit` folder AND the `LiveSplit\Components` folder, please ensure LiveSplit is fully closed and then delete both instances of the `LiveSplit.StardewValley.dll`. On startup of LiveSplit, you should see this dll pop-up ONLY in your `LiveSplit\Components` folder. If this has happened you should now be good to go.
 
 ---
 
