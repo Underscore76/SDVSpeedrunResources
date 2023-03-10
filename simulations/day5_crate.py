@@ -1,3 +1,18 @@
+# Code areas
+# player spawns at pixel standing pos of (288,352)
+# direction is ALWAYS UP (0) based on the day/tile loc for the club
+# Game1.createItemDebris(Item..., origin={X=352,Y=352}, direction=0)
+# - updates the origin in switch
+# - creates a Debris object at this origin (debrisType == -2)
+# public Debris(int debrisType=-2, int numberOfChunks=1, Vector2 debrisOrigin, Vector2 playerPosition, float velocityMultiplyer)
+# - if (playerPosition.Y >= debrisOrigin.Y - 32f && playerPosition.Y <= debrisOrigin.Y + 32f) 
+# - else if (playerPosition.Y < debrisOrigin.Y - 32f) will fail as well
+# - else 
+# -     this clause runs and sets min/max y velocity to 350/400
+# creates a chunk with yVelocity = random.NextInt(350,400)/40f
+# runs the updateChunks call every frame which is where the nonsense logic goes in
+# only worrying about Y positioning because we're within that 128px horizontal range (2 tiles)
+
 import math
 from collections import defaultdict
 from csrandom import CSRandom
@@ -22,8 +37,8 @@ def gen_samples(seed=0, n_samples=1000):
     return sample_counts
 
 def roughly_equiv_distributed(n_samples=10_000_000):
+    # want to ensure that calling random for the initial setup is uniform
     seed = 0
-
     sample_counts = gen_samples(seed, n_samples)
     counts = list(sample_counts.values())
     chi, p = chisquare(counts)
@@ -31,8 +46,12 @@ def roughly_equiv_distributed(n_samples=10_000_000):
     print(f'chi: {chi}\tp: {p}')
 
 class Day5Crate:
-    def __init__(self, origin, velocity, farmer_pos):
-        self.farmer_y_pos = farmer_pos
+    def __init__(self, origin, velocity, farmer_y_pos):
+        
+        self.farmer_y_pos = farmer_y_pos
+        self.tick = 0
+        self.farmer = None
+
         self.movingFinalYLevel = True
         self.chunkFinalYLevel = origin - 1
         self.chunkFinalYTarget = origin - 96
@@ -43,12 +62,10 @@ class Day5Crate:
         self.hasPassedRestingLineOnce = False
         self.timeSinceDoneBouncing = 0
         self.chunksMoveTowardPlayer = False
-        self.tick = 0
-        self.farmer = None
 
     def update(self):
         self.tick += 1
-        self.timeSinceDoneBouncing += 16
+        self.timeSinceDoneBouncing += 16 # ms ticks are truncated from 16.6667
         if self.timeSinceDoneBouncing >= 600:
             self.chunksMoveTowardPlayer = True
             self.timeSinceDoneBouncing = 0
