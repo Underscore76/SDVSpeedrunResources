@@ -13,7 +13,8 @@ Specific verion values
 - 1.4.0 - 2373680906867811602
 - 1.4.5 - 6307986820908740561
 - 1.5.4 - 7802000804251603756
-
+- 1.5.6 - 5609262347030774375
+- 1.5.6 (32bit XNA) - 618057478175226131
 ## Get the Depot Downloader
 
 DepotDownloader is a tool for pulling legacy versions of your games from steam, which you can find [here](https://github.com/SteamRE/DepotDownloader/releases). Download the zip file and expand it wherever.
