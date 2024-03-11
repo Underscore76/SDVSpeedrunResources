@@ -1,5 +1,7 @@
 # WineskinServer for Blade's MapPredictor
 
+Need to remember how to navigate to saves? Go [here](#navigation-to-saves)
+
 # Needs before we get started
 * Homebrew (open a terminal and type `brew` to see if you have it)
     * Homebrew is a package manager for MacOS, which we'll be using to install WineServer
@@ -87,3 +89,12 @@ Once you're satisfied it works you, you can close the window. The app icon might
 
 Blade's video guide for the Map Predictor can be found [here](https://www.youtube.com/watch?v=-ZqRYQcJseg).
 
+# Navigation to Saves
+
+When you attempt to `Open Save` you will need to fight a little bit to get to your saves. 
+
+<img src="./images/mappredictor/nav-to-saves.png" width="90%">
+
+Scroll down to the `/` and then navigate to `Users` -> `yourusername`
+
+Once you're here you can type `.config/StardewValley` in the file name box and hit enter. This will take you to the Stardew Valley saves folder on your Mac, where you can pick and choose a save to load. **Note: you will likely get prompted to provide access privileges multiple times as you drill down.**
