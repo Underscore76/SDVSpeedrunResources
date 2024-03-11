@@ -1,0 +1,89 @@
+# WineskinServer for Blade's MapPredictor
+
+# Needs before we get started
+* Homebrew (open a terminal and type `brew` to see if you have it)
+    * Homebrew is a package manager for MacOS, which we'll be using to install WineServer
+    * Can be found at [https://brew.sh/](https://brew.sh/)
+* Blade's Map Predictor (download from [Nexus](https://www.nexusmods.com/stardewvalley/mods/6614))
+
+# Step 1: Install WineServer
+1. Open a terminal
+2. Type `brew install --cask --no-quarantine gcenx/wine/wineskin`
+3. Wait for the installation to finish
+
+
+# Step 2: Install a Wineskin Engine
+
+When you try to launch `Wineskin Winery.app` for the first time, you will get a warning that it's from an unidentified developer. From the Wineskin Wiki:
+> The program is not co-signed, to launch it you can RMB (right mouse button) it and select Open, then Cancel, then again RMB it and select Open, and Open.
+
+You should be able to find it by navigating to your Applications folder directly.
+
+1. Open `Wineskin Winery.app`
+
+<img src="./images/mappredictor/blank-winery.png" width="50%">
+
+2. Click the `+` button to add a new engine
+
+<img src="./images/mappredictor/add-engine.png" width="50%">
+
+3. Select the latest engine and click `Download and Install` (I use the D3D Metal version, I'm on a M2 Mac, if you're on Intel it might have slightly different engine names)
+
+<img src="./images/mappredictor/select-engine.png" width="50%">
+
+4. You'll get a prompt to install the engine, click `OK`
+
+<img src="./images/mappredictor/download-prompt.png" width="50%">
+
+5. Wait for the engine to download and install
+
+# Step 3: Create a new Wineskin Wrapper
+
+1. Click `Create New Blank Wrapper`
+
+<img src="./images/mappredictor/click-new-blank.png" width="50%">
+
+2. Name your wrapper (I named mine `BladesPredictor`) and click OK.
+
+<img src="./images/mappredictor/name-wrapper.png" width="50%">
+
+This may take a moment to create the wrapper. You'll find it at `/Users/<yourusername>/Applications/Wineskin` 
+
+<img src="./images/mappredictor/wrapper-created.png" width="50%">
+
+3. Click `View Wrapper in Finder` to open the folder and then double click the wrapper to open it.
+
+# Step 4: Install Map Predictor in the Wrapper
+
+When opening the wrapper, you should see a window like this:
+
+<img src="./images/mappredictor/wineskin-start.png" width="50%">
+
+1. Click `Install Software`
+
+<img src="./images/mappredictor/install-software.png" width="50%">
+
+2. Click "Copy a Folder Inside" and navigate to the folder where you downloaded/unzipped Blade's Map Predictor. Select Choose
+
+<img src="./images/mappredictor/choose-predictor.png" width="50%">
+
+3. It'll prompt you to select the executable to use when you launch the app, for me at least it auto-detected the correct one but it should be the `MapPredictor.exe`.
+
+<img src="./images/mappredictor/choose-executable.png" width="50%">
+
+4. Click `OK` and then you'll come to an advanced settings screen. You can leave this as is and click `Install`
+
+<img src="./images/mappredictor/advanced-menu.png" width="50%">
+
+You can swap the app icon if you want (provided one here: [images/mappredictor/Wineskin.icns](images/mappredictor/Wineskin.icns))
+
+**I recommend clicking Test Run to ensure that the app works.**
+
+Once you're satisfied it works you, you can close the window. The app icon might not update right away, but if you right click and Get Info it should update.
+
+# Step 5: Running the app
+
+1. Open the wrapper by double clicking it! You can add it to your dock if you want to have it handy/keep it in your Applications folder if you want to find it in launchpad. (I just spotlight search for it normally).
+
+Blade's video guide for the Map Predictor can be found [here](https://www.youtube.com/watch?v=-ZqRYQcJseg).
+
