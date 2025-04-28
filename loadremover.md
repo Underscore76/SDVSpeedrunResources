@@ -13,6 +13,10 @@ Current support is for the following versions:
 - 1.5.4
 - 1.5.5
 - 1.5.6 Hotfix #3
+- 1.6.3
+- 1.6.8
+- 1.6.14
+- 1.6.15
 
 # Installing and using the Load Remover
 
