@@ -29,7 +29,7 @@ You should be able to find it by navigating to your Applications folder directly
 
 <img src="./images/mappredictor/add-engine.png" width="50%">
 
-3. Select the latest engine and click `Download and Install` (I use the D3D Metal version, I'm on a M2 Mac, if you're on Intel it might have slightly different engine names)
+3. Select the latest engine and click `Download and Install` (I use the D3D Metal version, I'm on a M2 Mac, if you're on Intel it might have slightly different engine names). **UPDATE:** Trying it on 07/30/2025, the latest engine for me is "WS12WineCX24.0.7_3" and that worked just fine.
 
 <img src="./images/mappredictor/select-engine.png" width="50%">
 
@@ -49,7 +49,7 @@ You should be able to find it by navigating to your Applications folder directly
 
 <img src="./images/mappredictor/name-wrapper.png" width="50%">
 
-This may take a moment to create the wrapper. You'll find it at `/Users/<yourusername>/Applications/Wineskin` 
+This may take a moment to create the wrapper (it might feel likes it has crashed but just wait it out). You'll find it at `/Users/<yourusername>/Applications/Wineskin` 
 
 <img src="./images/mappredictor/wrapper-created.png" width="50%">
 
@@ -65,7 +65,7 @@ When opening the wrapper, you should see a window like this:
 
 <img src="./images/mappredictor/install-software.png" width="50%">
 
-2. Click "Copy a Folder Inside" and navigate to the folder where you downloaded/unzipped Blade's Map Predictor. Select Choose
+2. Click `Copy a Folder Inside` and navigate to the folder where you downloaded/unzipped Blade's Map Predictor. Select Choose
 
 <img src="./images/mappredictor/choose-predictor.png" width="50%">
 
@@ -79,7 +79,21 @@ When opening the wrapper, you should see a window like this:
 
 You can swap the app icon if you want (provided one here: [images/mappredictor/Wineskin.icns](images/mappredictor/Wineskin.icns))
 
-**I recommend clicking Test Run to ensure that the app works.**
+**BEFORE LEAVING THIS SCREEN:** Click `Test Run` this will fail on the first run, as it will prompt you to install the .NET SDK.
+
+<img src="./images/mappredictor/download-sdk-prompt.png" width="50%">
+
+Click Yes, which will open a web browser and start the download of the windows version of the .NET SDK.
+
+You'll also get a prompt that the test run was a success, you can ignore viewing the log.
+
+5. Once the .NET SDK executable file is downloaded, click `Install Software` again in the Wineskin wrapper window. This time pick `Choose Setup Executable` and navigate to the .NET SDK executable you just downloaded. It may take a moment (on my first build it told me it failed but still worked anyways) and you should see the following install screen:
+
+<img src="./images/mappredictor/launch-sdk-install.png" width="50%">
+
+Click Install and wait for the process to finish. Then you can close out. 
+
+At this point everything should be set up but I recommend doing another Test Run to ensure everything is working properly. If you get the Predictor window to open then you're all set!
 
 Once you're satisfied it works you, you can close the window. The app icon might not update right away, but if you right click and Get Info it should update.
 
